@@ -4,6 +4,9 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'E-commerce Product API',
   description: 'Full-stack e-commerce application with product API and React frontend',
+  icons: {
+    icon: '/vercel.svg',
+  },
 };
 
 export default function RootLayout({

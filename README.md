@@ -2,9 +2,39 @@
 
 MPC E-commerce Product API and Frontend Application
 
+**By Joshua Mwendwa**
+
 ## Overview
 
 I have built a comprehensive full-stack e-commerce application using Next.js 16, featuring a robust RESTful API for product management and a modern React frontend with TypeScript. Throughout this project, I implemented product CRUD operations, category filtering, responsive design, and integrated a PostgreSQL database with Prisma ORM. I focused on creating a scalable, maintainable codebase with clean architecture and modern development practices.
+
+## Frontend Deliverables
+
+### Layout Approach
+I implemented a responsive grid layout using CSS Grid and Flexbox for the product cards, with a mobile-first approach that adapts from single-column on mobile to multi-column on larger screens. I used custom CSS classes instead of Tailwind to maintain full control over styling and ensure consistent design patterns.
+
+### Responsiveness Considerations
+The application features responsive breakpoints at 768px and 1024px, with product cards that stack vertically on mobile devices and display in a 2-3 column grid on tablets and desktops. I ensured touch-friendly interactions and optimized image loading for different screen sizes.
+
+## Backend Deliverables
+
+### Tech Stack
+I used Node.js with Next.js API routes, TypeScript for type safety, and Prisma ORM for database operations with PostgreSQL. This stack provides excellent performance, type safety, and developer experience.
+
+### How to Run the Project
+Install dependencies with `npm install`, set up your PostgreSQL database, run `npx prisma db push` for migrations, then start development with `npm run dev`. The application will be available at http://localhost:3000.
+
+### Sample API Requests
+```bash
+# Get all products
+curl http://localhost:3000/api/products
+
+# Filter by category
+curl "http://localhost:3000/api/products?category=Electronics"
+
+# Get specific product
+curl http://localhost:3000/api/products/1
+```
 
 ## What I Accomplished
 
@@ -223,10 +253,19 @@ npm run build
 npm start
 ```
 
+## Integration/Full-Stack Deliverables
+
+### Fully Working Full-Stack Demo
+The application integrates a responsive React frontend with a robust Node.js API backend, providing a complete e-commerce product browsing experience with real-time category filtering and dynamic product display.
+
+### Deployment Links
+- **Frontend:** Deployed on Vercel at [https://joshua-mwendwa.vercel.app](https://joshua-mwendwa.vercel.app)
+- **Backend API:** Hosted on Vercel serverless functions (same domain as frontend)
+
 ## Demo
 
-- **Frontend:** [http://localhost:3000](http://localhost:3000)
-- **API Base:** [http://localhost:3000/api/products](http://localhost:3000/api/products)
+- **Frontend:** [http://localhost:3000](http://localhost:3000) or [https://joshua-mwendwa.vercel.app](https://joshua-mwendwa.vercel.app)
+- **API Base:** [http://localhost:3000/api/products](http://localhost:3000/api/products) or [https://joshua-mwendwa.vercel.app/api/products](https://joshua-mwendwa.vercel.app/api/products)
 
 ## Testing the API
 
