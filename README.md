@@ -57,12 +57,13 @@ I built a responsive, modern user interface featuring:
 
 I replaced Tailwind CSS with custom CSS to demonstrate my styling capabilities and maintain full control over the visual design.
 
-### Database Integration
-I set up a PostgreSQL database using Prisma ORM:
+## Database Integration
+I set up a PostgreSQL database using Prisma ORM with Neon for online hosting:
 - Designed a comprehensive Product model with variants, availability tracking, and image support
 - Created database migrations and seeding scripts
 - Implemented proper data relationships and constraints
 - Ensured data integrity and efficient querying
+- Used Neon (neondb) for cloud-hosted PostgreSQL database
 
 ### Technical Implementation
 I utilized modern web technologies:
