@@ -1,8 +1,6 @@
-'use client';
-
 import { useState, useEffect } from 'react';
 import ProductCard from './components/ProductCard';
-import './page.css';
+import './App.css';
 
 interface Product {
   id: number;
@@ -16,7 +14,7 @@ interface Product {
   updatedAt: string;
 }
 
-export default function Home() {
+function App() {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -121,3 +119,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default App;
